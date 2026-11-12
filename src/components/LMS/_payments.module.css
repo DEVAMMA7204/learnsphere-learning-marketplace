@@ -1,0 +1,111 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #f6f7fb;
+}
+
+.payment_box {
+  width: 100%;
+  max-width: 550px;
+  margin: 30px auto;
+  padding: 35px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+}
+
+.header p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.field input {
+  width: 100%;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  border: 1px solid #d5d5d5;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.field input:focus {
+  border-color: #222;
+}
+
+.field input::placeholder {
+  color: #aaa;
+}
+
+.payment_button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.payment_button:hover {
+  background: #000;
+}
+
+.payment_button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .payment_box {
+    padding: 25px 20px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+}
